@@ -1,0 +1,23 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome!</h1>
+    <p>Do you wanna code something? but no idea what to code? well thats what i am here for!</p>
+    <p>Just click the button below and get yourself a project!</p>
+    <form method="post">
+        <button type="submit" value="submit" class="getProject">Get new project!</button>
+    </form>
+    <div class="chosenProject">
+        @{
+            Random rnd = new Random();
+            var choose = rnd.Next(projectsList.proj.Count);
+            string projectSelected = projectsList.proj[choose];
+        }
+        <h1>@projectSelected</h1>
+    </div>
+</div>
+
