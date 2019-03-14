@@ -1,3 +1,3 @@
 # What To code?
-Simple website made with ASP.NET CORE 2.2
-i made this project to learn ASP.NET CORE
+Dont know what to code? 
+I made this project for myself to give me random projects i shall work on
